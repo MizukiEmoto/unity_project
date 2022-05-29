@@ -6,10 +6,9 @@
 using UnityEngine;
 using System.Collections;
 
-
 namespace UnityChan
 {
-	public class AutoBlink : MonoBehaviour
+	public class Move : MonoBehaviour
 	{
 
 		public bool isActive = true;				//オート目パチ有効
