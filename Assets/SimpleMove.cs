@@ -26,10 +26,20 @@ public class SimpleMove : MonoBehaviour {
         Rotate(); // 移動方向を向いて
         Move(); // 移動して
         ChangeAnimation(); // アニメーションを変更する
-
+        GetJump();
     }
 
-	void GetInputAxis()
+    void GetJump()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            animator.SetBool("is_jumping", true);
+        }
+        else
+            animator.SetBool("is_jumping", false);
+    }
+
+    void GetInputAxis()
 	{
 		inputVector.x = Input.GetAxisRaw("Horizontal");
         inputVector.z = Input.GetAxisRaw("Vertical");

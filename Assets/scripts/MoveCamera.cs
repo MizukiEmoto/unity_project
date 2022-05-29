@@ -4,9 +4,9 @@ using UnityEngine;
 public class MoveCamera : MonoBehaviour
 {
     public Transform Target;
-    public float DistanceToPlayerM = 2f;    // カメラとプレイヤーとの距離[m]
+    public float DistanceToPlayerM = 1f;    // カメラとプレイヤーとの距離[m]
     public float SlideDistanceM = 0f;       // カメラを横にスライドさせる；プラスの時右へ，マイナスの時左へ[m]
-    public float HeightM = 1.2f;            // 注視点の高さ[m]
+    public float HeightM = 1.8f;            // 注視点の高さ[m]
     public float RotationSensitivity = 100f;// 感度
 
     void Start()
